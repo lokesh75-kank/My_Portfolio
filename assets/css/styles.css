@@ -456,7 +456,8 @@ body.light-theme{
 
 .about__img{
   width: 220px;
-  border-radius: 1.5rem;
+  /* height: ; */
+  border-radius: 2.5rem;
   justify-self: center;
 }
 
@@ -494,6 +495,7 @@ body.light-theme{
 
 .about__description{
   margin-bottom: 2rem;
+  /* font-size: var(--small-font-size); */
 }
 
 /*=============== SKILLS ===============*/
