@@ -313,6 +313,8 @@ body.light-theme{
   position: relative;
   row-gap: 4.5rem;
   padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .home__data{
@@ -335,6 +337,9 @@ body.light-theme{
 .home__education{
   color: var(--text-color);
   margin-bottom: 2.5rem;
+  max-width: 500px; /* Replace [desired-width] with your preferred width, like 500px or 80% */
+  /* word-wrap: break-word; */
+  /* text-align: center; */
 }
 
 .home__name{
@@ -476,6 +481,8 @@ body.light-theme{
   background-color: var(--container-color);
   border-radius: .75rem;
   padding: .75rem .5rem;
+  width: 400px; /* Replace [desired-width] with your preferred width, e.g., 300px or 100% */
+  height: auto;
 
 }
 
@@ -498,6 +505,74 @@ body.light-theme{
   /* font-size: var(--small-font-size); */
 }
 
+/*=============== WORK ===============*/
+
+.work__container{
+  padding-top: 1rem;
+}
+
+.work__filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: 2rem;
+}
+
+
+.work__item{
+  cursor: pointer;
+  color: var(--title-color);
+  padding: .25rem .75rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem;
+}
+
+.work__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 300px; /* Replace [desired-width] with your preferred width, e.g., 300px or 100% */
+  height: auto;
+}
+
+.work__img{
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+}
+
+.work__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.work__button{
+  width: max-content;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.work__button:hover .work__icon{
+  transform: translateX(.25rem);
+}
+
+.work__icon{
+  font-size: 1rem;
+  transition: .4s;
+}
+
+
+
+/* Active item work*/
+.active-work{
+  background-color: var(--first-color);
+  color: var(--body-color);
+
+}
 /*=============== SKILLS ===============*/
 .skills__container{
   row-gap: 2rem;
@@ -552,6 +627,8 @@ body.light-theme{
 .skills__level{
   font-size: var(--tiny-font-size);
 }
+
+
 /*=============== SERVICES ===============*/
 
 .services__tabs{
@@ -624,73 +701,6 @@ body.light-theme{
 .services__button.services__active{
   color: var(--first-color);
 }
-/*=============== WORK ===============*/
-
-.work__container{
-  padding-top: 1rem;
-}
-
-.work__filters{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: .75rem;
-  margin-bottom: 2rem;
-}
-
-
-.work__item{
-  cursor: pointer;
-  color: var(--title-color);
-  padding: .25rem .75rem;
-  font-weight: var(--font-medium);
-  border-radius: .5rem;
-}
-
-.work__card{
-  background-color: var(--container-color);
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.work__img{
-  border-radius: 1rem;
-  margin-bottom: .75rem;
-}
-
-.work__title{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: .25rem;
-}
-
-.work__button{
-  width: max-content;
-  color: var(--first-color);
-  font-size: var(--small-font-size);
-  display: flex;
-  align-items: center;
-  column-gap: .25rem;
-}
-
-.work__button:hover .work__icon{
-  transform: translateX(.25rem);
-}
-
-.work__icon{
-  font-size: 1rem;
-  transition: .4s;
-}
-
-
-
-/* Active item work*/
-.active-work{
-  background-color: var(--first-color);
-  color: var(--body-color);
-
-}
-
 
 /*=============== CONTACT ===============*/
 .contact__container{
