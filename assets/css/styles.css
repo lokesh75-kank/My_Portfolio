@@ -460,8 +460,8 @@ body.light-theme{
 }
 
 .about__img{
-  width: 220px;
-  /* height: ; */
+  width: 320px;
+  height: auto;
   border-radius: 2.5rem;
   justify-self: center;
 }
@@ -1052,7 +1052,7 @@ body.light-theme{
   }
 
   .about__img{
-    width: 350px;
+    width: 550px;
 
   }
 
